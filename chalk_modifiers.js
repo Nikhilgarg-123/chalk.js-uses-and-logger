@@ -10,3 +10,10 @@ log(chalk.bgGrey.bgBlack.inverse("inverse Try"));
 log(chalk.red.bgCyan.hidden("hidden Try"));
 log(chalk.red.bgCyan.strikethrough("strikethrough Try"));
 log(chalk.red.bgCyan.visible("visible Try"));
+log(chalk.blue('Hello', 'World!', 'Foo', 'bar', 'biz', 'baz'));
+log(chalk.red('Hello', chalk.underline.bgBlue('world') + '!'));
+log(chalk.green(
+	'I am a green line ' +
+	chalk.blue.underline.bold('with a blue substring') +
+	' that becomes green again!'
+));
